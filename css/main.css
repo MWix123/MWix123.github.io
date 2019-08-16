@@ -157,12 +157,20 @@ button:active{
 }
 
 #portfolio-project-description{
-	text-indent: 2em;
 	padding:40px;
+}
+
+#portfolio-project-description p{
+	text-indent: 2em;
+	margin-top: 10px;
 }
 
 #portfolio-project-description h3{
 	margin-bottom: 10px
+}
+
+#portfolio-project-description h5{
+	text-align: center;
 }
 
 #resume-content h4{
