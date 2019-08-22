@@ -259,6 +259,10 @@ main a:hover, .link:hover{
 		display: block;
 	}
 
+	button{
+		font-size:0.9em;
+	}
+
 	.one-fourth{
 		width:55%;
 	}
@@ -270,9 +274,23 @@ main a:hover, .link:hover{
 	.mobile{
 		display: initial;
 	}
+
+	.gallery-left-arrow, .gallery-right-arrow{
+		padding:0.5%;
+		width:4%;
+	}
 }
 
 @media only screen and (max-width:550px){
+
+	main h1{
+		font-size:2.25em;
+	}
+
+	main h2{
+		font-size:1.2em;
+	}
+
 	#bio-medium-photo{
 		display: none;
 	}
@@ -280,4 +298,13 @@ main a:hover, .link:hover{
 	#bio-small-photo{
 		display: block;
 	}
+
+	button{
+		font-size:0.8em;
+	}
+	
+	#resume-content, #portfolio-project-description{
+		font-size: 0.9em;
+	}
+
 }
