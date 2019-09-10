@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Matthew Wix Portfolio</title>
+	<link rel="icon" href="images/bio-small.jpg" />
 	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Sniglet" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet" type="text/css"/>
-	<script src="scripts/main.js" type="text/javascript">		
+	<script src="scripts/main.js">		
 	</script>
 </head>
 <body>
@@ -17,9 +19,9 @@
 				<h2>Software Developer</h2>
 			</div>			
 			<div class="left">
-				<img id="bio-photo" src="images/bio.jpg" />
-				<img id="bio-medium-photo" src="images/bio-medium.jpg" />
-				<img id="bio-small-photo" src="images/bio-small.jpg" />
+				<img id="bio-photo" src="images/bio.jpg" alt="bio-photo" />
+				<img id="bio-medium-photo" src="images/bio-medium.jpg" alt="bio-photo" />
+				<img id="bio-small-photo" src="images/bio-small.jpg" alt="bio-photo" />
 			</div>
 		</div>
 		<div class="content">
@@ -27,7 +29,7 @@
 			<button id="portfolio" onclick="makeActive(this)">Portfolio</button>
 		</div>
 		<div id="content-viewer">
-			<a href="documents/Matthew Wix - Software Developer.docx"><button id="resume-download">Download Resume</button></a>
+			<button id="resume-download"><a href="documents/Matthew Wix%20-%20Software%20Developer.docx">Download Resume</a></button>
 			<div id="resume-content">
 				<h3>Matthew Wix</h3>
 				<h5 style="text-align: center;">Tallahassee, Fl | (904)312-4141 | mtw16@my.fsu.edu </h5>
@@ -44,11 +46,12 @@
 					<h5>Florida State University (FSU), Tallahassee, FL</h5>
 				</div>
 				<div class="one-fourth">
-					<h5><strong>Overall GPA: </strong> 3.97</h5>
+					<h5><strong>Overall GPA: </strong> 3.95</h5>
 				</div>
 				<br />
 				<h4>Technical & Language Skills</h4>
-				<h5>Programming Languages: <strong>C++, C, Java, HTML, CSS, JavaScript, Python, VBA, SQL</strong></h5>
+				<h5>Programming Languages: <strong>C++, C, Python, Java, HTML, CSS, JavaScript, VBA, SQL</strong></h5>
+				<h5>Frameworks: <strong>Django, React</strong></h5>
 				<h5>Platforms: <strong>Linux, Microsoft Windows, Apple (Mac)</strong></h5>
 				<h5>Microsoft Office Suite: <strong>Word, Excel, PowerPoint</strong></h5>
 				<br />
@@ -63,6 +66,7 @@
 				<br />
 				<ul>
 					<li>Revamp and maintain Florida State University’s Financial Aid Webpage (<a target="_blank" href="https://financialaid.fsu.edu/">https://financialaid.fsu.edu/</a>)</li>
+					<li>Automate data extraction from Oracle Campus Solutions system using Selenium</li>
 					<li>Used Microsoft Excel to create custom spreadsheets and pivot tables to extract data</li>
 					<li>Develop and maintain database for tracking office hardware information using Microsoft Access</li>
 					<li>Develop metric charts and graphs for presentations and statistical analysis</li>
@@ -71,15 +75,28 @@
 				</ul>
 				<h4>Projects</h4>
 				<h5><strong class="link" onclick="makeActive(document.getElementById('portfolio'))">See here for coding projects/websites</strong></h5>
-				<h5><strong>Financial Data Extraction</strong></h5>
+				<div class="three-fourth">
+					<h5><strong>Financial Data Extraction</strong></h5>
+				</div>
+				<div class="one-fourth">
+					<h5><strong>June 2019</strong></h5>
+				</div>
+				<br class="mobile" />
 				<ul>
 					<li>Implemented a custom spreadsheet with VBA that significantly improved the FSU Financial Aid Accounting department’s productivity by streamlining the process of extracting financial data</li>
-				</ul>
-				<h5><strong>Budget Worksheet</strong></h5>
-				<ul>
-					<li>Created a Budget Worksheet for FSU’s Office of Financial Aid (<a target="_blank" href="https://financialaid.fsu.edu/sites/g/files/upcbnu646/files/Forms/2019/FSU%20-%20Budget%20Worksheet.pdf">https://financialaid.fsu.edu/sites/g/files/upcbnu646/files/Forms/2019/FSU%20-%20Budget%20Worksheet.pdf</a>)</li>
+					<li>Developed a user interface with TKinter and Selenium that enabled members of the FSU Financial Aid Office to run multiple different queries in FSU’s Oracle Campus Solutions system and have the results consolidated into a single Excel spreadsheet</li>
 				</ul>
 				<h4>Education-Related Experience</h4>
+				<div class="three-fourth">
+					<h5><strong>Operating Systems</strong></h5>
+				</div>
+				<div class="one-fourth">
+					<h5><strong>January 2019 – May 2019</strong></h5>
+				</div>
+				<br class="mobile"/>
+				<ul>
+					<li>Used C to implement operating system concepts such as a bash shell and reading/writing to a FAT32 file system image</li>
+				</ul>
 				<div class="three-fourth">
 					<h5><strong>Data Structures and Algorithms Project</strong></h5>
 				</div>
@@ -100,18 +117,6 @@
 				<ul>
 					<li>Understood the Object-Oriented Programming concepts and C++ techniques</li>
 					<li>Implemented Sieve of Eratosthenes algorithm operating on single bits for memory savings.</li>
-					<li>Familiarized with Linked List data structure.</li>
-				</ul>
-				<h4>Involvement</h4>
-				<div class="three-fourth">
-					<h5><strong>FSU Association for Computing Machinery (ACM)</strong></h5>
-				</div>
-				<div class="one-fourth">
-					<h5><strong>August 2017 - Present</strong></h5>
-				</div>
-				<br />
-				<ul>
-					<li>Attended and participated in collegiate programming contests while working alongside students from other universities to create one of a kind projects in a designated period of time.</li>
 				</ul>
 			</div>
 			<div id="portfolio-content">
@@ -119,7 +124,7 @@
 					<div class="gallery-left-arrow" onclick="nextProject('left')">
 						&lt;
 					</div>
-					<img id="portfolio-project-image" src="images/gallery/maze.png"/>
+					<img id="portfolio-project-image" src="images/gallery/maze.png" alt="portfolio-image"/>
 					<div class="gallery-right-arrow" onclick="nextProject('right')">
 						&gt;
 					</div>

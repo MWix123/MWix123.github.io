@@ -80,7 +80,7 @@ button{
 	font-weight:bold;
 	border:2px solid #007d72;
 	cursor:pointer;
-		font-family: 'Sniglet', cursive;
+	font-family: 'Sniglet', cursive;
 	font-size:1em;
 	letter-spacing:1px;
 }
@@ -109,6 +109,14 @@ button:active{
 	display: block;
 	margin: auto;
 	margin-bottom: 25px;
+}
+
+#resume-download > a {
+    color: white;
+}
+
+#resume-download > a:hover{
+    color: yellow;
 }
 
 #resume-content, #portfolio-content{
